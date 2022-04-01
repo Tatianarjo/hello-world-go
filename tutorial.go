@@ -10,7 +10,18 @@ func main() {
 
 	fmt.Scan(&name)
 
-	fmt.Printf("Hello, %v, welcome to the game!", name)
+	fmt.Printf("Hello, %v, welcome to the game!\n", name)
+
+	fmt.Printf("Enter your age: ")
+	var age uint
+	fmt.Scan(&age)
+
+	if age >= 10 {
+		fmt.Println("Yay you can play!")
+	} else {
+		fmt.Println("You cannot play!")
+	}
+
 }
 
 //33:18
